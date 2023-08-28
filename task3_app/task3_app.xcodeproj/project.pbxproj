@@ -12,6 +12,10 @@
 		29A733D92A9D5B1A000F0A69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A733D72A9D5B1A000F0A69 /* LaunchScreen.storyboard */; };
 		29A733E72A9D5B58000F0A69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A733E52A9D5B57000F0A69 /* HomeViewController.swift */; };
 		29A733E82A9D5B58000F0A69 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A733E62A9D5B57000F0A69 /* HomeViewController.xib */; };
+		29A733EB2A9D5C60000F0A69 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A733EA2A9D5C60000F0A69 /* TimerManager.swift */; };
+		29A733ED2A9D5EF2000F0A69 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A733EC2A9D5EF2000F0A69 /* HomeViewModel.swift */; };
+		29A733F22A9D635F000F0A69 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A733F12A9D635F000F0A69 /* SoundManager.swift */; };
+		29A733F42A9D6395000F0A69 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 29A733F32A9D6395000F0A69 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		29A733DA2A9D5B1A000F0A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A733E52A9D5B57000F0A69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29A733E62A9D5B57000F0A69 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		29A733EA2A9D5C60000F0A69 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		29A733EC2A9D5EF2000F0A69 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		29A733F12A9D635F000F0A69 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		29A733F32A9D6395000F0A69 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = ../../../../Downloads/alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			children = (
 				29A733DA2A9D5B1A000F0A69 /* Info.plist */,
 				29A733E02A9D5B1E000F0A69 /* APP */,
+				29A733E92A9D5C53000F0A69 /* Managers */,
 				29A733E22A9D5B27000F0A69 /* Resources */,
 				29A733E12A9D5B22000F0A69 /* Screens */,
 			);
@@ -82,6 +91,7 @@
 		29A733E22A9D5B27000F0A69 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29A733F32A9D6395000F0A69 /* alarm_sound.mp3 */,
 				29A733D52A9D5B1A000F0A69 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -100,8 +110,18 @@
 			children = (
 				29A733E52A9D5B57000F0A69 /* HomeViewController.swift */,
 				29A733E62A9D5B57000F0A69 /* HomeViewController.xib */,
+				29A733EC2A9D5EF2000F0A69 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		29A733E92A9D5C53000F0A69 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				29A733EA2A9D5C60000F0A69 /* TimerManager.swift */,
+				29A733F12A9D635F000F0A69 /* SoundManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +185,7 @@
 				29A733D92A9D5B1A000F0A69 /* LaunchScreen.storyboard in Resources */,
 				29A733D62A9D5B1A000F0A69 /* Assets.xcassets in Resources */,
 				29A733E82A9D5B58000F0A69 /* HomeViewController.xib in Resources */,
+				29A733F42A9D6395000F0A69 /* alarm_sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A733EB2A9D5C60000F0A69 /* TimerManager.swift in Sources */,
 				29A733CD2A9D5B19000F0A69 /* AppDelegate.swift in Sources */,
 				29A733E72A9D5B58000F0A69 /* HomeViewController.swift in Sources */,
+				29A733ED2A9D5EF2000F0A69 /* HomeViewModel.swift in Sources */,
+				29A733F22A9D635F000F0A69 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
